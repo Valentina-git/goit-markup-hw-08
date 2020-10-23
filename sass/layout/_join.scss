@@ -1,0 +1,46 @@
+.join {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.143px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	color: $primary-white-color;
+
+	&__list {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+
+		& .join__item + .join__item {
+			margin-left: 10px;
+		}
+	}
+
+	&__link {
+		justify-content: center;
+		transition: $transition;
+		display: flex;
+		align-items: center;
+		border-radius: 50%;
+
+		width: 44px;
+		height: 44px;
+		background-color: rgba(255, 255, 255, 0.1);
+		background-position: center;
+
+		&:hover,
+		&:focus {
+			background-color: $accent-color;
+		}
+	}
+
+	&__svg {
+		fill: $primary-white-color;
+
+		.join__link:hover &,
+		.join__link:focus & {
+			fill: $primary-white-color;
+		}
+	}
+}

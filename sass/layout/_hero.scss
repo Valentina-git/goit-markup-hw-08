@@ -1,0 +1,29 @@
+.hero {
+	width: 100%;
+	padding-top: 200px;
+	padding-bottom: 200px;
+
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+		url(../images/hw4/hero/герой.jpg);
+	background-size: cover;
+	background-position: center;
+	background-color: #2f303a;
+
+	&__container {
+		margin-left: auto;
+		margin-right: auto;
+		display: flexbox;
+
+		max-width: 572px;
+		text-align: center;
+		letter-spacing: 0.06em;
+	}
+
+	&__title {
+		color: $primary-white-color;
+		font-weight: 900;
+		font-size: 44px;
+		line-height: 1.36;
+		text-transform: uppercase;
+	}
+}

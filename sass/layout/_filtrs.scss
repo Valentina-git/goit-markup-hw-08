@@ -1,0 +1,40 @@
+.filter {
+	&__block {
+		flex-basis: calc((100% - 32px) / 5);
+	}
+
+	&__list {
+		margin-bottom: 50px;
+		display: flex;
+		justify-content: center;
+
+		& .filter__item + .filter__item {
+			margin-left: 8px;
+		}
+	}
+
+	&__btn {
+		transition: $transition;
+		border: none;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		padding-left: 22px;
+		padding-right: 22px;
+
+		color: $title-text-color;
+		text-align: center;
+		font-family: inherit;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.62;
+		letter-spacing: inherit;
+		border-radius: 4px;
+
+		&:hover,
+		&:focus {
+			background-color: $accent-color;
+			color: $primary-white-color;
+			box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+		}
+	}
+}
