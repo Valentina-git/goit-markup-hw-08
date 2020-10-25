@@ -2,18 +2,21 @@
 	border-bottom: 1px solid #ececec;
 
 	&__site {
-		margin-left: 93px;
 		font-weight: 500;
 		font-size: 14px;
 		line-height: 1.14;
 		letter-spacing: 0.02em;
 	}
 }
+
 .main-flex {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	// flex-wrap: wrap;
+	// height: 453px;
 }
+
 .navigation {
 	display: flex;
 	align-items: center;

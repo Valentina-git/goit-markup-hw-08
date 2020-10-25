@@ -135,7 +135,10 @@
 
         <ul class="work__list">
           <li class="work__item">
-            <img class="work__image" src="./images/игорь.jpg" alt="фото мужчины в очках" width="270" height="260" />
+            <img class="work__image" 
+            src="./images/игорь.jpg" 
+            alt="фото мужчины в очках" />
+            <!-- width="270" height="260" -->
             <h3 class="work__title">Игорь Демьяненко</h3>
             <p class="work__indent">Product Designer</p>
 
@@ -176,7 +179,9 @@
           </li>
 
           <li class="work__item">
-            <img class="work__image" src="./images/ольга.jpg" alt="фото женщины в очках" width="270" height="260" />
+            <img class="work__image" 
+            src="./images/ольга.jpg" 
+            alt="фото женщины в очках" />
 
             <h3 class="work__title">Ольга Репина</h3>
             <p class="work__indent">Frontend Developer</p>
@@ -218,7 +223,9 @@
           </li>
 
           <li class="work__item">
-            <img class="work__image" src="./images/николай.jpg" alt="фото мужчины" width="270" height="260" />
+            <img class="work__image" 
+            src="./images/николай.jpg" 
+            alt="фото мужчины" />
 
             <h3 class="work__title">Николай Тарасов</h3>
             <p class="work__indent">Marketing</p>
@@ -259,7 +266,9 @@
           </li>
 
           <li class="work__item">
-            <img class="work__image" src="./images/михаил.jpg" alt="фото мужчины в очках" width="270" height="260" />
+            <img class="work__image" 
+            src="./images/михаил.jpg" 
+            alt="фото мужчины в очках" />
 
             <h3 class="work__title">Михаил Ермаков</h3>
             <p class="work__indent">UI Designer</p>
@@ -308,7 +317,7 @@
       <div class="container clients__section">
         <h1 class="section__title">Постоянные клиенты</h1>
 
-        <ul class="clients">
+        <ul class="clients__list">
           <li class="clients__item">
             <a href="" class="clients__link">
               <svg class="clients__svg" height="50">
@@ -386,8 +395,8 @@
       </div>
 
       <!-- Присоединяйтесь -->
-      <div class="footer-box">
-        <p class="join">Присоединяйтесь</p>
+      <div class="footer-box join">
+        <p class=" footer-title">Присоединяйтесь</p>
         <ul class="join__list">
 
           <li class="join__item">
@@ -425,11 +434,13 @@
       </div>
 
       <!-- Подпишитесь на рассылку -->
-      <div class="footer-box">
-        <p class="subscribe__text">Подпишитесь на рассылку</p>
+      <div class="footer-box subscribe">
+        <p class="subscribe__text footer-title">Подпишитесь на рассылку</p>
 
         <form class="subscribe__form" action="#">
-          <input class="subscribe__input" name="user-phone" type="email" placeholder="E-mail" required>
+          <input class="subscribe__input" 
+          name="user-phone" 
+          type="email" placeholder="E-mail" required>
 
           <button class="subscribe__btn button" type="submit">Подписаться
             <svg class="subscribe__icon">

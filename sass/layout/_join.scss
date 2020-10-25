@@ -1,16 +1,13 @@
 .join {
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.143px;
-	text-transform: uppercase;
-	margin-bottom: 20px;
-	color: $primary-white-color;
-
 	&__list {
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;
 		border-radius: 50%;
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 60px;
+		}
 
 		& .join__item + .join__item {
 			margin-left: 10px;
@@ -43,4 +40,11 @@
 			fill: $primary-white-color;
 		}
 	}
+}
+
+.footer-title {
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	color: $primary-white-color;
+	@include font(700, 14px, 1.143);
 }
