@@ -18,12 +18,25 @@
 
   <!-- Шапка сайта -->
   <header class="page-header">
-    <div class="container main-flex">
 
+    <div class="container">
+<div class="main-flex page-header__menu">
       <nav class="navigation">
         <!-- Logo-header -->
-        <a class="logo navigation__logo-header link" href="./index.html" aria-label="logo">
+        <a class="logo navigation__logo-header link" 
+            href="./index.html" aria-label="logo">
           <span class="logo__accent-web">Web</span>Studio</a>
+
+          <button class="menu-button is-open" type="button"
+          data-menu-button>
+            <svg class="icon-mobile" width="20" height="20" 
+            aria-label="Переключатель мобильного меню" >
+              <use class="icon-cross"
+               href="./img/hw8/sprite-menu.svg#icon-cross" ></use>
+              <use class="icon-menu"
+               href="./img/hw8/sprite-menu.svg#icon-menu"></use>
+            </svg>
+          </button>
 
         <!-- Site  -->
         <ul class="site-nav__list page-header__site">
@@ -54,6 +67,8 @@
               +38 096 111 11 11</a> </li>
         </ul>
       </address>
+</div>
+
     </div>
   </header>
 

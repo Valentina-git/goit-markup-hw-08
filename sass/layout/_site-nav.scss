@@ -1,7 +1,13 @@
 .site-nav {
 	&__list {
-		display: flex;
-		margin-left: 93px;
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+
+		@media screen and (min-width: 768px) {
+			margin-left: 93px;
+			display: flex;
+		}
 
 		//  flex-direction: column;
 		// justify-content: center;
@@ -17,8 +23,10 @@
 	}
 
 	&__item {
-		.site-nav__list & + & {
-			margin-left: 50px;
+		@media screen and (min-width: 768px) {
+			.site-nav__list & + & {
+				margin-left: 50px;
+			}
 		}
 	}
 
@@ -47,9 +55,3 @@
 		}
 	}
 }
-
-// &__item {
-// 	&:not(:last-child) {
-// 		margin-bottom: 40px;
-// 	}
-// }

@@ -2,22 +2,58 @@
 	border-bottom: 1px solid #ececec;
 
 	&__site {
-		font-weight: 500;
-		font-size: 14px;
-		line-height: 1.14;
 		letter-spacing: 0.02em;
+
+		@media screen and (min-width: 768px) and (max-width: 1199px) {
+			@include font(500, 12px, 1.167);
+		}
+
+		@media screen and (min-width: 1200px) {
+			@include font(500, 14px, 1.14);
+		}
 	}
 }
 
 .main-flex {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
 	// flex-wrap: wrap;
 	// height: 453px;
 }
 
 .navigation {
-	display: flex;
-	align-items: center;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		align-items: center;
+	}
+}
+
+// .page-header__menu .navigation {
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: space-between;
+// 	min-height: 80px;
+// }
+// .menu-button {
+// 	display: inline-flex;
+// 	background-color: transparent;
+// }
+// .icon-menu {
+// 	background-color: blue;
+// }
+// .menu-button .icon-cross {
+// 	display: none;
+// }
+// .menu-button.is-open .icon-cross {
+// 	display: block;
+// }
+// .menu-button.is-open .icon-menu {
+// 	display: none;
+// }
+.icon-mobile {
+	fill: black;
 }

@@ -2,24 +2,24 @@
 	display: flex;
 	flex-wrap: wrap;
 
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		margin: -15px;
+	}
+
 	& .card__title {
 		margin-top: 0;
 		margin-bottom: 4px;
-
-		font-weight: 700;
-		font-size: 18px;
-		line-height: 2;
 		letter-spacing: 0.06em;
 		color: $title-text-color;
+
+		@include font(700, 18px, 2);
 	}
 
 	& .card__indent {
 		margin-top: 0;
 		margin-bottom: 0;
-
 		color: $primary-text-color;
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 1.87;
+
+		@include font(400, 16px, 1.87);
 	}
 }
