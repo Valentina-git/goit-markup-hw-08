@@ -92,6 +92,10 @@ body {
   font-style: normal;
 }
 
+body.data-modal-open {
+  overflow: hidden;
+}
+
 .container {
   max-width: 100%;
   padding-left: 15px;
@@ -179,10 +183,26 @@ body {
 
 .page-header {
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 .page-header__site {
   letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header__site {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  .page-header__site.is-open {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -216,8 +236,37 @@ body {
   }
 }
 
-.icon-mobile {
-  fill: black;
+.page-header__menu .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }
 
 .logo {
@@ -275,12 +324,6 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .site-nav__list {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .site-nav__list {
     margin-left: 93px;
@@ -320,12 +363,6 @@ body {
 
 .site-nav__link:hover, .site-nav__link:focus {
   color: #2196f3;
-}
-
-@media screen and (max-width: 767px) {
-  .site-contacts__list {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 1200px) {

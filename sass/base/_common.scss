@@ -72,3 +72,6 @@ body {
 .address {
 	font-style: normal;
 }
+body.data-modal-open {
+	overflow: hidden;
+}
