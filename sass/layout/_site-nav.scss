@@ -1,9 +1,8 @@
 .site-nav {
+	@media screen and (max-width: 767px) {
+		margin-bottom: 60px;
+	}
 	&__list {
-		// @media screen and (max-width: 767px) {
-		// 	display: none;
-		// }
-
 		@media screen and (min-width: 768px) {
 			margin-left: 93px;
 			display: flex;
@@ -15,14 +14,27 @@
 
 		& .site-nav__link {
 			transition: $transition;
-			display: block;
-			padding-top: 32px;
-			padding-bottom: 32px;
 			color: $title-text-color;
+
+			@media screen and (max-width: 767px) {
+				&:not(:last-child) {
+					margin-bottom: 40px;
+				}
+			}
+			@media screen and (min-width: 768px) {
+				display: block;
+				padding-top: 32px;
+				padding-bottom: 32px;
+			}
 		}
 	}
 
 	&__item {
+		@media screen and (max-width: 767px) {
+			&:not(:last-child) {
+				margin-bottom: 40px;
+			}
+		}
 		@media screen and (min-width: 768px) {
 			.site-nav__list & + & {
 				margin-left: 50px;
