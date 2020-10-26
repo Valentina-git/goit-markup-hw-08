@@ -98,7 +98,7 @@
 
     <!-- Features-->
     <section class="feature section">
-      <h2 class="section__title" visually-hidden >Особенности</h2>
+      <h2 class="section__title" hidden >Особенности</h2>
       <div class="container">
 
         <ul class="feature__list">
@@ -140,17 +140,50 @@
 
         <ul class="plan__list">
           <li class="plan__item">
-            <img class="plan__image" src="./images/img1.jpg" alt="Мужчина пишет код с клавиатуры" width="370"
-              height="294" />
+
+              <picture class="plan__item-picture">
+                <source 
+                srcset="./images/hw8/desktop/plan/desktop@1x.jpg, 
+                ./images/hw8/desktop/plan/desktop@2x.jpg 2x" 
+                media="(min-width: 1200px)">
+
+                  <img class="plan__image" 
+                  src="./images/hw8/desktop/plan/desktop@1x.jpg" 
+                  alt="Мужчина пишет код с клавиатуры" width="370"
+                    height="294" />
+              </picture>
             <p class="plan__text">Десктопные приложения</p>
           </li>
+
           <li class="plan__item">
-            <img class="plan__image" src="./images/img2.jpg" alt="Девушка создает интерфейс как на телефоне" width="370"
-              height="294" />
+
+              <picture class="plan__item-picture">
+                <source 
+                srcset="./images/hw8/desktop/plan/mobile@1x.jpg, 
+                ./images/hw8/desktop/plan/mobile@2x.jpg 2x" 
+                media="(min-width: 1200px)">
+
+                <img class="plan__image" 
+                src="./images/hw8/desktop/plan/mobile@1x.jpg" 
+                alt="Девушка создает интерфейс как на телефоне"
+                  width="370" height="294" />
+              </picture>
             <p class="plan__text">Мобильные приложения</p>
           </li>
+
           <li class="plan__item">
-            <img class="plan__image" src="./images/img3.jpg" alt="Выбор цветовой палитры" width="370" height="294" />
+      
+            <picture class="plan__item-picture">
+              <source 
+              srcset="./images/hw8/desktop/plan/decision@1x.jpg, 
+              ./images/hw8/desktop/plan/decision@2x.jpg 2x" 
+              media="(min-width: 1200px)">
+
+              <img class="plan__image" 
+              src="./images/hw8/desktop/plan/decision@1x.jpg" 
+              alt="Выбор цветовой палитры" width="370"
+                height="294" />
+            </picture>
             <p class="plan__text">Дизайнерские решения</p>
           </li>
         </ul>
@@ -164,10 +197,25 @@
 
         <ul class="work__list">
           <li class="work__item">
-            <img class="work__image" 
-            src="./images/игорь.jpg" 
-            alt="фото мужчины в очках" />
-            <!-- width="270" height="260" -->
+
+            <picture class="work__item-picture">
+              <source srcset="./images/hw8/desktop/work/igor@1x.jpg, 
+                      ./images/hw8/desktop/work/igor@2x.jpg 2x" 
+                      media="(min-width: 1200px)">
+
+              <source srcset="./images/hw8/tablet/work/igor@1x.jpg, 
+                            ./images/hw8/tablet/work/igor@2x.jpg 2x" 
+                            media="(min-width: 768px)">
+
+              <source srcset="./images/hw8/mobile/work/igor@1x.jpg, 
+                              ./images/hw8/mobile/work/igor@2x.jpg 2x" 
+                              media="(min-width: 320px)">
+            
+              <img class="work__image" 
+              src="./images/hw8/mobile/work/igor@1x.jpg" 
+              alt="фото мужчины в очках" />
+            </picture>
+            
             <h3 class="work__title">Игорь Демьяненко</h3>
             <p class="work__indent">Product Designer</p>
 
@@ -208,9 +256,24 @@
           </li>
 
           <li class="work__item">
-            <img class="work__image" 
-            src="./images/ольга.jpg" 
-            alt="фото женщины в очках" />
+            
+        <picture class="work__item-picture">
+          <source srcset="./images/hw8/desktop/work/olga@1x.jpg, 
+                          ./images/hw8/desktop/work/olga@2x.jpg 2x" 
+                          media="(min-width: 1200px)">
+            
+          <source srcset="./images/hw8/tablet/work/olga@1x.jpg, 
+                          ./images/hw8/tablet/work/olga@2x.jpg 2x" 
+                          media="(min-width: 768px)">
+            
+          <source srcset="./images/hw8/mobile/work/olga@1x.jpg, 
+                          ./images/hw8/mobile/work/olga@2x.jpg 2x" 
+                          media="(min-width: 320px)">
+            
+              <img class="work__image" 
+              src="./images/hw8/mobile/work/olga@1x.jpg" 
+              alt="фото женщины в очках" />
+            </picture>
 
             <h3 class="work__title">Ольга Репина</h3>
             <p class="work__indent">Frontend Developer</p>
@@ -252,9 +315,24 @@
           </li>
 
           <li class="work__item">
-            <img class="work__image" 
-            src="./images/николай.jpg" 
-            alt="фото мужчины" />
+    
+      <picture class="work__item-picture">
+          <source srcset="./images/hw8/desktop/work/kola@1x.jpg, 
+                          ./images/hw8/desktop/work/kola@2x.jpg 2x" 
+                          media="(min-width: 1200px)">
+            
+          <source srcset="./images/hw8/tablet/work/kola@1x.jpg, 
+                          ./images/hw8/tablet/work/kola@2x.jpg 2x" 
+                          media="(min-width: 768px)">
+            
+          <source srcset="./images/hw8/mobile/work/kola@1x.jpg, 
+                          ./images/hw8/mobile/work/kola@2x.jpg 2x" 
+                           media="(min-width: 320px)">
+            
+          <img class="work__image" 
+              src="./images/hw8/mobile/work/kola@1x.jpg" 
+              alt="фото мужчины" />
+      </picture>
 
             <h3 class="work__title">Николай Тарасов</h3>
             <p class="work__indent">Marketing</p>
@@ -295,9 +373,24 @@
           </li>
 
           <li class="work__item">
-            <img class="work__image" 
-            src="./images/михаил.jpg" 
-            alt="фото мужчины в очках" />
+
+            <picture class="work__item-picture">
+              <source srcset="./images/hw8/desktop/work/mixa@1x.jpg, 
+                              ./images/hw8/desktop/work/mixa@2x.jpg 2x" 
+                              media="(min-width: 1200px)">
+            
+              <source srcset="./images/hw8/tablet/work/mixa@1x.jpg, 
+                              ./images/hw8/tablet/work/mixa@2x.jpg 2x" 
+                              media="(min-width: 768px)">
+            
+              <source srcset="./images/hw8/mobile/work/mixa@1x.jpg, 
+                              ./images/hw8/mobile/work/mixa@2x.jpg 2x" 
+                              media="(min-width: 320px)">
+            
+              <img class="work__image" 
+              src="./images/hw8/mobile/work/mixa@1x.jpg" 
+              alt="фото мужчины в очках" />
+            </picture>
 
             <h3 class="work__title">Михаил Ермаков</h3>
             <p class="work__indent">UI Designer</p>
