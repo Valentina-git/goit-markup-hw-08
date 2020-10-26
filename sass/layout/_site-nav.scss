@@ -1,16 +1,16 @@
 .site-nav {
+	@media screen and (min-width: 768px) {
+		margin-left: 93px;
+	}
+
 	@media screen and (max-width: 767px) {
 		margin-bottom: 60px;
 	}
+
 	&__list {
 		@media screen and (min-width: 768px) {
-			margin-left: 93px;
 			display: flex;
 		}
-
-		//  flex-direction: column;
-		// justify-content: center;
-		// align-items: center;
 
 		& .site-nav__link {
 			transition: $transition;
@@ -57,6 +57,10 @@
 
 			border-radius: 2px;
 			background: #2196f3;
+
+			@media screen and (max-width: 767px) {
+				bottom: -8px;
+			}
 		}
 	}
 
