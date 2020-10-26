@@ -223,7 +223,7 @@ body.data-modal-open {
   .main-flex {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 
@@ -282,15 +282,21 @@ body.data-modal-open {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .site-nav {
-    margin-left: 93px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .site-nav {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .site-nav {
+    margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    margin-left: 93px;
   }
 }
 
@@ -360,8 +366,16 @@ body.data-modal-open {
 @media screen and (min-width: 768px) {
   .contacts {
     display: flex;
+    justify-content: space-around;
     align-items: center;
     margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-contacts__list {
+    display: flex;
+    margin-right: auto;
   }
 }
 
@@ -709,10 +723,10 @@ body.data-modal-open {
 
 @media screen and (min-width: 1200px) {
   .footer-box {
-    width: calc(50% - 45px)/2;
+    width: calc((50% - 45px) / 2);
   }
   .footer-box:last-child {
-    width: calc(50%-15px);
+    width: calc(50% - 15px);
   }
 }
 
@@ -785,11 +799,16 @@ body.data-modal-open {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe__form {
+    display: flex;
+  }
+}
+
 .subscribe__input {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 10px 20px;
   height: 50px;
-  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -801,6 +820,7 @@ body.data-modal-open {
   .subscribe__input {
     width: 100%;
     max-width: 450px;
+    margin-bottom: 20px;
   }
 }
 

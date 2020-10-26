@@ -50,10 +50,10 @@
 
 .footer-box {
 	@media screen and (min-width: $desktop) {
-		width: calc(50% - 45px) / 2;
+		width: calc((50% - 45px) / 2);
 
 		&:last-child {
-			width: calc(50%-15px);
+			width: calc(50% - 15px);
 		}
 	}
 }

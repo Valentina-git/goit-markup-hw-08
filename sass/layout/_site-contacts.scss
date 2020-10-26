@@ -1,12 +1,20 @@
 .contacts {
 	@media screen and (min-width: 768px) {
 		display: flex;
+		justify-content: space-around;
 		align-items: center;
 		margin-left: 50px;
 	}
 }
 
 .site-contacts {
+	&__list {
+		@media screen and (min-width: 1200px) {
+			display: flex;
+			margin-right: auto;
+		}
+	}
+
 	&__item {
 		@media screen and (max-width: 767px) {
 			&:not(:last-child) {

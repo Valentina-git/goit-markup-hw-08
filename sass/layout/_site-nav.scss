@@ -1,10 +1,14 @@
 .site-nav {
-	@media screen and (min-width: 768px) {
-		margin-left: 93px;
-	}
-
 	@media screen and (max-width: 767px) {
 		margin-bottom: 60px;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		margin-left: 88px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-left: 93px;
 	}
 
 	&__list {
