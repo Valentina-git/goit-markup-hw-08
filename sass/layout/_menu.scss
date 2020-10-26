@@ -1,12 +1,13 @@
 .menu-button {
-	// width: 40px;
-	// height: 40px;
+	display: flex;
+	width: 40px;
+	height: 40px;
 	background-color: transparent;
 
-	&:hover .icon-menu {
-		fill: $accent-color;
-	}
-	&:hover .icon-cross {
+	&:hover .icon-cross,
+	&:focus .icon-cross,
+	&:hover .icon-menu,
+	&:focus .icon-menu {
 		fill: $accent-color;
 	}
 
@@ -44,5 +45,10 @@
 
 	@media screen and (min-width: 768px) {
 		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
+}
+.icon-menu {
+	background-size: cover;
 }

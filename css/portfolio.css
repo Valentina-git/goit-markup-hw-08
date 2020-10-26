@@ -227,6 +227,19 @@ body.data-modal-open {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation {
+    margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation {
+    flex-grow: 1;
+    margin-left: 93px;
+  }
+}
+
 .logo {
   font-family: Raleway, sans-serif;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -285,18 +298,6 @@ body.data-modal-open {
 @media screen and (max-width: 767px) {
   .site-nav {
     margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .site-nav {
-    margin-left: 88px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .site-nav {
-    margin-left: 93px;
   }
 }
 
@@ -375,7 +376,6 @@ body.data-modal-open {
 @media screen and (min-width: 1200px) {
   .site-contacts__list {
     display: flex;
-    margin-right: auto;
   }
 }
 
@@ -615,14 +615,16 @@ body.data-modal-open {
 }
 
 .menu-button {
+  display: flex;
+  width: 40px;
+  height: 40px;
   background-color: transparent;
 }
 
-.menu-button:hover .icon-menu {
-  fill: #2196f3;
-}
-
-.menu-button:hover .icon-cross {
+.menu-button:hover .icon-cross,
+.menu-button:focus .icon-cross,
+.menu-button:hover .icon-menu,
+.menu-button:focus .icon-menu {
   fill: #2196f3;
 }
 
@@ -665,7 +667,13 @@ body.data-modal-open {
 @media screen and (min-width: 768px) {
   .menu-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+}
+
+.icon-menu {
+  background-size: cover;
 }
 
 .footer {
