@@ -27,6 +27,7 @@
 
 .menu-container {
 	@media screen and (max-width: 767px) {
+		z-index: 100;
 		border-top: 1px solid #ececec;
 		display: none;
 		position: absolute;

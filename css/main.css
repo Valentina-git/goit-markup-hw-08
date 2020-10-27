@@ -1048,6 +1048,7 @@ body.data-modal-open {
 
 @media screen and (max-width: 767px) {
   .menu-container {
+    z-index: 100;
     border-top: 1px solid #ececec;
     display: none;
     position: absolute;
